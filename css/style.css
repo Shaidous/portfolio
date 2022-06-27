@@ -1,0 +1,260 @@
+* {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+* h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  background-color: #EEEFF1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+main nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (600px)[3];
+      grid-template-columns: repeat(3, 600px);
+  -ms-grid-rows: (100px)[1];
+      grid-template-rows: repeat(1, 100px);
+  padding-top: 2%;
+  margin-left: 10%;
+}
+
+main nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (100px)[1];
+      grid-template-rows: repeat(1, 100px);
+}
+
+main nav ul li {
+  padding-right: 2em;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+main nav ul li a:hover {
+  color: #34547A;
+}
+
+main .main-center {
+  padding-top: 15vh;
+  margin-left: 20%;
+  padding-right: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (250px)[2];
+      grid-template-rows: repeat(2, 250px);
+}
+
+main .main-center h1 {
+  font-size: 32px;
+}
+
+main .main-center h3 {
+  margin-top: 1.3em;
+  color: #727272;
+}
+
+main .main-center button {
+  background-color: #34547A;
+  border: 0;
+  color: #fff;
+  padding: 15px 40px;
+  margin-top: 50px;
+  margin-left: 23%;
+  cursor: pointer;
+}
+
+.aboutMe h2 {
+  font-size: 32px;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.aboutMe h3 {
+  color: #727272;
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15vh;
+  margin-top: 5vh;
+}
+
+.aboutMe .aboutMe-footer {
+  background-color: #34547A;
+  height: 20vh;
+}
+
+.aboutMe .aboutMe-footer img {
+  margin: 4% 7% auto;
+}
+
+.mySkills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (250px)[2];
+      grid-template-rows: repeat(2, 250px);
+  height: 80vh;
+}
+
+.mySkills .mySkills-text {
+  margin: 6vh 17vw auto;
+}
+
+.mySkills .mySkills-text h2 {
+  margin-bottom: 1vh;
+}
+
+.mySkills .mySkills-img {
+  margin-top: 10vh;
+}
+
+.mySkills li {
+  list-style: none;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.skill-bar {
+  height: 20px;
+  background-color: #696969;
+  border-radius: 8px;
+}
+
+.skill-per {
+  position: relative;
+  height: 20px;
+  background-color: #34547A;
+  border-radius: 8px;
+  width: 0%;
+  -webkit-transition: 2s linear;
+  transition: 2s linear;
+}
+
+.skill-per .value {
+  position: absolute;
+  background-color: #fff;
+  padding: 4px 6px;
+  right: 0;
+  top: -35px;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  opacity: 0;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
+}
+
+.how-working {
+  background-color: #EEEFF1;
+}
+
+.how-working .container {
+  padding-top: 6vh;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.how-working .container h2 {
+  margin-left: 33% auto;
+  margin-bottom: 2vh;
+}
+
+.how-working .container p {
+  margin: 0 auto;
+  height: 11vh;
+  width: 35vw;
+  color: #727272;
+}
+
+.how-working .container img {
+  height: 50vh;
+  margin-bottom: 8vh;
+  opacity: 85%;
+}
+
+.work li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.work .first-section {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work .first-section img {
+  width: 100%;
+}
+
+.work .second-section {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work .second-section img {
+  width: 100%;
+}
+
+.contacts {
+  background-color: #EEEFF1;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #34547A;
+}
+
+footer p {
+  margin: 30px 300px 30px 100px;
+  font-size: 21px;
+  color: #fff;
+}
+
+footer a {
+  margin: 32px 0px 0px 150px;
+  font-size: 16px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
