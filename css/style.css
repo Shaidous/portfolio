@@ -21,6 +21,50 @@
   text-align: center;
 }
 
+/*==============button=============*/
+#button {
+  display: inline-block;
+  background-color: #34547A;
+  text-align: center;
+  border-radius: 7px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+#button::after {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+header {
+  width: 100%;
+}
+
 main {
   width: 100%;
   background-color: #EEEFF1;
@@ -34,25 +78,25 @@ main {
 main nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (600px)[3];
-      grid-template-columns: repeat(3, 600px);
-  -ms-grid-rows: (100px)[1];
-      grid-template-rows: repeat(1, 100px);
+  -ms-grid-columns: (30%)[2];
+      grid-template-columns: repeat(2, 30%);
+  -ms-grid-rows: (8vh)[1];
+      grid-template-rows: repeat(1, 8vh);
   padding-top: 2%;
-  margin-left: 10%;
+  padding-left: 7%;
+  background-color: #0c006880;
 }
 
 main nav ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (100px)[1];
-      grid-template-rows: repeat(1, 100px);
+  -ms-grid-columns: (55%)[4];
+      grid-template-columns: repeat(4, 55%);
+  -ms-grid-rows: (20px)[1];
+      grid-template-rows: repeat(1, 20px);
 }
 
 main nav ul li {
-  padding-right: 2em;
   list-style: none;
   text-transform: uppercase;
 }
@@ -62,6 +106,7 @@ main nav ul li a:hover {
 }
 
 main .main-center {
+  margin-top: 10vh;
   padding-top: 15vh;
   margin-left: 20%;
   padding-right: 5em;
@@ -94,7 +139,7 @@ main .main-center button {
 
 .aboutMe h2 {
   font-size: 32px;
-  margin-top: 15vh;
+  padding-top: 15vh;
   text-align: center;
 }
 
@@ -138,7 +183,7 @@ main .main-center button {
 }
 
 .mySkills .mySkills-img {
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 .mySkills li {
@@ -165,12 +210,13 @@ main .main-center button {
 
 .skill-per .value {
   position: absolute;
-  background-color: #fff;
-  padding: 4px 6px;
+  background-color: #fff 0;
+  color: #bbbbbb;
+  padding: 35px 6px;
   right: 0;
   top: -35px;
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
+  -webkit-transform: translateX(8%);
+  transform: translateX(8%);
   opacity: 0;
   -webkit-transition: 3s ease;
   transition: 3s ease;
@@ -237,6 +283,17 @@ main .main-center button {
 
 .contacts {
   background-color: #EEEFF1;
+}
+
+.contacts h2 {
+  padding: 4vh 0 4vh 0;
+}
+
+.contacts p {
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: 4vh;
 }
 
 footer {
