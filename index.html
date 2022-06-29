@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+
     <link rel="stylesheet" href="/portfolio/css/style.css">
     <link rel="stylesheet" href="/portfolio/css/style.css.map">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,20 +13,19 @@
     <title>AlexFominykh</title>
 </head>
 <body>
+    <header>
     <main>
         <a id="button">Вернуться в начало страницы</a>
     <nav>
         <img src="../portfolio/img/Logo.svg" alt="Logo">
         <div class="nav-items">
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Об авторе</a></li>
-                <li><a href="#">Работы</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="#about">Об авторе</a></li>
+                <li><a href="#howWorking">Как я работаю</a></li>
+                <li><a href="#work">Работы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
-        
-    </div>
     </nav>
     <div class="main-center">
         <div class="main-center-img"><img src="../portfolio/img/notebook.svg" alt="notebook"></div>
@@ -35,7 +35,7 @@
         <button>Связаться со мной</button>
     </div>
         </main>
-    <section class="aboutMe">
+    <section class="aboutMe" id="about">
         <div class="container"><h2>Обо мне</h2>
         <h3>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</h3>
         </div>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </section>
-        <section class="mySkills">
+        <section class="mySkills" id="about">
             <div class="mySkills-text">
                 <h2>Мои навыки</h2>
                 <ul>
@@ -112,8 +112,8 @@
                 <li><div class="skill">
                     <div class="skill-name">etc.</div>
                     <div class="skill-bar">
-                        <div class="skill-per" per="-20">
-                            <span class="value">-20%</span>
+                        <div class="skill-per" per="20">
+                            <span class="value">20%</span>
                         </div>
                     </div>
                 </div>
@@ -124,14 +124,14 @@
                 <img src="../portfolio/img/Photo.svg" alt="myPhoto">
             </div>
         </section>
-        <section class="how-working">
+        <section class="how-working" id="howWorking">
             <div class="container">
             <h2>Как я работаю</h2>
             <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
             <img src="../portfolio/img/how-working-img.png" alt="low-humor" class="how-working-img">
             </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
             <ul>
                 <div class="first-section">
                 <li><img src="../portfolio/img/work.png" alt="work"></li>
@@ -146,7 +146,7 @@
                 <li><img src="../portfolio/img/work.png" alt="work"></li>
                 </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts-text">
                 <h2>Хотите со мной связаться?</h2>
                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
@@ -163,8 +163,8 @@
             <a href="vk"><img src="../portfolio/img/vkImg.svg" alt="vkontakte"></a>
             <a href="+ 8 996 046 65 45">+ 8 996 046 65 45</a>
         </footer>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </header>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="../portfolio/app.js"></script>
 </body>
 </html>
