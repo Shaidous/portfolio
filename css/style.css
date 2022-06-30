@@ -21,6 +21,11 @@
   text-align: center;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /*==============button=============*/
 #button {
   display: inline-block;
