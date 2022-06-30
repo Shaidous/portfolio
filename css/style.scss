@@ -83,7 +83,7 @@ main{
     }
 }
 
-@media screen and (min-width:480px) and (max-width:1080px) {
+@media screen and (min-width:360px) and (max-width:1080px) {
     main{
         a{
             font-size: 14px;
@@ -93,7 +93,7 @@ main{
     }
 }
 
-@media screen and (min-width:480px) and (max-width:660px) {
+@media screen and (min-width:360px) and (max-width:660px) {
     main{
         ul{
             display: grid;
