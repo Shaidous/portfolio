@@ -78,8 +78,8 @@ main {
 main nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (30%)[2];
-      grid-template-columns: repeat(2, 30%);
+  -ms-grid-columns: (27%)[2];
+      grid-template-columns: repeat(2, 27%);
   -ms-grid-rows: (8vh)[1];
       grid-template-rows: repeat(1, 8vh);
   padding-top: 2%;
@@ -103,6 +103,30 @@ main nav ul li {
 
 main nav ul li a:hover {
   color: #34547A;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1080px) {
+  main a {
+    font-size: 14px;
+    -ms-grid-columns: (45%)[4];
+        grid-template-columns: repeat(4, 45%);
+    -ms-grid-rows: (20px)[1];
+        grid-template-rows: repeat(1, 20px);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 660px) {
+  main ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+    -ms-grid-rows: (20px)[1];
+        grid-template-rows: repeat(1, 20px);
+  }
+  main a {
+    font-size: 10px;
+  }
 }
 
 .main-center {
@@ -157,7 +181,7 @@ main nav ul li a:hover {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 977px) {
+@media screen and (min-width: 480px) and (max-width: 1040px) {
   .main-center h1 {
     font-size: 20px;
   }
@@ -166,7 +190,7 @@ main nav ul li a:hover {
     line-height: 14px;
   }
   .main-center img {
-    height: 60%;
+    height: 75%;
   }
   .main-center button {
     padding: 4% 5%;
@@ -177,7 +201,27 @@ main nav ul li a:hover {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 752px) {
+@media screen and (min-width: 360px) and (max-width: 960px) {
+  .main-center h1 {
+    font-size: 16px;
+  }
+  .main-center h3 {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .main-center img {
+    height: 65%;
+  }
+  .main-center button {
+    padding: 4% 5%;
+    margin-top: 10%;
+    margin-left: 23%;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
   .main-center h1 {
     font-size: 16px;
   }
@@ -197,9 +241,9 @@ main nav ul li a:hover {
   }
 }
 
-@media screen and (min-width: 200px) and (max-width: 601px) {
+@media screen and (min-width: 480px) and (max-width: 660px) {
   .main-center h1 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .main-center h3 {
     font-size: 8px;
