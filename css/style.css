@@ -30,10 +30,8 @@
   position: fixed;
   top: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s, 
- opacity .5s, visibility .5s;
-  transition: background-color .3s, 
- opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s,  opacity .5s, visibility .5s;
+  transition: background-color .3s,  opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -63,17 +61,13 @@
   visibility: visible;
 }
 
-header {
-  width: 100%;
-}
-
 main {
   width: 100%;
   background-color: #EEEFF1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
+  height: 100vh;
 }
 
 main nav {
@@ -106,29 +100,29 @@ main nav ul li a:hover {
   color: #34547A;
 }
 
-main .main-center {
+.main-center {
   margin-top: 10vh;
   padding-top: 15vh;
   margin-left: 20%;
-  padding-right: 5em;
+  padding-right: 10%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
   -ms-grid-rows: (250px)[2];
       grid-template-rows: repeat(2, 250px);
 }
 
-main .main-center h1 {
+.main-center h1 {
   font-size: 32px;
 }
 
-main .main-center h3 {
+.main-center h3 {
   margin-top: 1.3em;
   color: #727272;
 }
 
-main .main-center button {
+.main-center button {
   background-color: #34547A;
   border: 0;
   color: #fff;
